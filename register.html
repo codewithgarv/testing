@@ -1,0 +1,121 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+     <!-- Bootstrap link -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+     <!-- javascript link -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+     <!--Font-Awesome  -->
+     <script src="https://kit.fontawesome.com/36530d595b.js" crossorigin="anonymous"></script>
+     <!-- My Style -->
+     <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Upper-Nav -->
+    <div class="container-fluid">
+        <section id="Home-Nav">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                    <div class="container-fluid">
+                       <a class="navbar-brand logo fw-bold " href="index.html"><i class="fa-solid fa-graduation-cap logo"></i> Code-Club.</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link text-black" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-black" href="course.html">Courses</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link text-black" href="#services">Services</a>
+                            </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link text-black" href="about.html">About us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-black" href="contact.html">Contact us</a>
+                            </li>
+                   
+                         </ul>
+                      </div>
+                    </div>
+                        </nav>
+                        <!-- <hr> -->
+                    </div> 
+                </div>
+            </div>
+        </section>
+    <!-- </div> -->
+    <!-- Navbar Ends -->
+
+    <!-- Form start -->
+
+        <section>
+            <div class="container-fluid mt-3">
+                <div class="row">
+                    <div class="col">
+                        <form action="https://formspree.io/f/mbjwbakq" method="POST" onsubmit="return formValidate()">
+                            <div class="mb-3">
+                                <h3>Contact us</h3>
+                                <label  for="name" class="form-label">Full name:</label>
+                                <input name="name" type="text" class="form-control" id="name" aria-describedby="emailHelp" >
+                                <div class="invalid-feedback">You did't enter a correct name</div>
+                            </div>
+                            <div class="mb-3">
+                                <label  for="myemail" class="form-label">Email:</label>
+                                <input name="myemail" type="text" class="form-control" id="myemail" >
+                                <div class="invalid-feedback">You did't enter a correct email</div>
+                            </div>
+                            <div class="mb-3">
+                                <label  for="contact" class="form-label">Contact no:</label>
+                                <input name="contact" type="text" class="form-control" id="contact" >
+                                <div class="invalid-feedback">You did't enter a correct contact no</div>
+                            </div>
+                            <div class="mb-3">
+                                <label  class="form-check-label" for="train">Training type:</label>
+                                <select name="Training type" class="form-select" aria-label="Default select example" id="training type" >
+                                <option selected value="select">select</option>
+                                <option value="online">online</option>
+                                <option value="offline">offline</option>
+                                </select>
+                                <div class="invalid-feedback">You did't choose a option</div>
+                            </div>
+                            <div class="mb-3">
+                                <label  class="form-check-label" for="course">Courses:</label>
+                                <select name="course" class="form-select" aria-label="Default select example" id="course" >
+                                <option selected value="c_select">select</option>
+                                <option value="C">C</option>
+                                <option value="C++">C++</option>
+                                <option value="Core Java">Core Java</option>
+                                <option value="Python with data science">Python with data science</option>
+                                <option value="Full statck web developement">Full stack web developement</option>
+                                <option value="Android Developement">Android Developement</option>
+                                </select>
+                                <div class="invalid-feedback">You did't choose a option</div>
+                            </div>
+                            <div class="form-outline">
+                                 <label  class="form-label" for="msg">Message:</label>
+                                 <textarea name="msg"class="form-control" id="msg" rows="4" ></textarea>
+                                 <div class="invalid-feedback">You did't enter a correct Message</div>
+                               
+                            </div>
+                            <button type="submit" value="submit" class="mt-2 btn btn-dark">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Form ends -->
+    <script src="js/main.js"></script>
+    
+</body>
+</html>

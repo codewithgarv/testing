@@ -1,0 +1,45 @@
+.hero{
+    width: 100%;
+    height: auto;
+    /* margin-left: 12rem; */
+}
+.orange{
+    color: orangered;
+}
+.holo{
+    margin-left: 6rem;
+}
+.holo a{
+    text-decoration: none;
+}
+.orange{
+    color: orangered;
+}
+.down{
+    text-decoration: none;
+    color: grey;
+}
+.down:hover{
+    color: white;
+}
+.down2{
+    text-decoration: none;
+}
+/* .bord{
+    border: 1px solid black;
+    width: auto;
+    margin-left: 30%;
+    /* background-color: aquamarine; */
+} */
+form{
+    background-color: yellowgreen;
+}
+
+
+/* Media query for cards */
+@media (max-width:376px){
+    .img-cent{
+        margin-left: -2.9rem;
+        /* margin-top: 2rem; */
+    }
+}
